@@ -1,4 +1,7 @@
-﻿#include "Day1.h"
+﻿#include "Helpers.h"
+
+#include <tuple>
+#include <iostream>
 
 //Part I: assumptions
 //1) All numbers in inputs are in range <0, 2020>
@@ -17,9 +20,9 @@ int main()
     //Part I
     const auto inputs = ReadInputsFromFile("Input.txt");
     const auto pair = FindTheTwoEntriesThatSumTo2020(inputs);
-    std::cout << "Part I: " << std::apply(MultiplyAllElements, pair) << std::endl;
+    std::cout << "Part I: " << MultiplyAllElements(pair) << std::endl;
 
     //Part II
     const auto triplet = FindTheTripletThatSumTo2020(inputs);
-    std::cout << "Part II: " << std::apply(MultiplyAllElements, triplet) << std::endl;
+    std::cout << "Part II: " << MultiplyAllElements(triplet) << std::endl;
 }

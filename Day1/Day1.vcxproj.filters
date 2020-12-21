@@ -15,15 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Input.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Day1.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Input.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Day1.h">
+    <ClInclude Include="Helpers.h">
       <Filter>Pliki zasobów</Filter>
     </ClInclude>
   </ItemGroup>
